@@ -7,6 +7,8 @@ cd ../.. -- comes out of two folders
 pwd -- prints present working directory
 whoami -- prints where you are in which folder
 ls -- lists the files
+mv -- renames the file or folders
+mv -- moves file or directories
 rm -- removes the files
 rm -rf -- removes the folders 
 cp -- copies files and folders
@@ -17,5 +19,14 @@ find -- searches folders and files
 chmod -- change mode to change file and folder permission
 chown -- chage ownership gives ownership permission
 touch file -- creates a empty file
+tar -- to create or extract archieve files
+zip -- to compress files
+unzip -- to extract compressed file
+ps -- displays running process
+kill -- terminates process
+grep -- used search for specific patterns in files
+top --monitor system process in real time
+
+
 useradd username -- create a user
 groupadd groupname --create a group
