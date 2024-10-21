@@ -13,7 +13,9 @@ cp -- copies files and folders
 cat -- prints the content of files
 head -- displays first few lines
 tails -- displays the last few lines
-
+find -- searches folders and files
+chmod -- change mode to change file and folder permission
+chown -- chage ownership gives ownership permission
 touch file -- creates a empty file
 useradd username -- create a user
 groupadd groupname --create a group
