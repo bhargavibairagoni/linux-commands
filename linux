@@ -1,3 +1,6 @@
 sudo su - = change root user
+mkdir folder -- create a folder
+vim file1 -- creates a text file
+touch file -- creates a empty file
 useradd username -- create a user
 groupadd groupname --create a group
