@@ -9,6 +9,10 @@ whoami -- prints where you are in which folder
 ls -- lists the files
 rm -- removes the files
 rm -rf -- removes the folders 
+cp -- copies files and folders
+cat -- prints the content of files
+head -- displays first few lines
+tails -- displays the last few lines
 
 touch file -- creates a empty file
 useradd username -- create a user
