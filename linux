@@ -30,3 +30,115 @@ top --monitor system process in real time
 
 useradd username -- create a user
 groupadd groupname --create a group
+
+
+File and Directory Management:
+ls – List files in a directory.
+Example: ls -l (long listing format) or ls -a (including hidden files)
+cd – Change directory.
+Example: cd /path/to/directory
+pwd – Print working directory.
+mkdir – Make a new directory.
+Example: mkdir new_folder
+rmdir – Remove an empty directory.
+rm – Remove files or directories.
+Example: rm -rf directory_name (force remove directory and contents)
+touch – Create an empty file.
+cp – Copy files or directories.
+Example: cp file1 file2
+mv – Move or rename files and directories.
+Example: mv old_name new_name
+find – Search for files in a directory hierarchy.
+Example: find /path/to/search -name "*.txt"
+File Content and Text Processing:
+cat – Concatenate and display file contents.
+Example: cat file.txt
+more / less – View file contents page by page.
+head – Display the first few lines of a file.
+Example: head -n 10 file.txt
+tail – Display the last few lines of a file.
+Example: tail -n 10 file.txt
+grep – Search for patterns in a file.
+Example: grep "pattern" file.txt
+wc – Word, line, and character count in a file.
+Example: wc -l file.txt (count lines)
+sort – Sort lines in a file.
+Example: sort file.txt
+uniq – Remove duplicate lines.
+Example: uniq file.txt
+Process Management:
+ps – Display currently running processes.
+Example: ps aux (detailed list of all processes)
+top – Display real-time process monitoring.
+kill – Terminate processes.
+Example: kill -9 PID
+killall – Kill all processes by name.
+Example: killall process_name
+bg – Resume a job in the background.
+fg – Bring a job to the foreground.
+System Information:
+uname – Display system information.
+Example: uname -a (all system info)
+df – Display disk space usage.
+Example: df -h (human-readable format)
+du – Display disk usage of files and directories.
+Example: du -sh * (summarize disk usage)
+free – Display memory usage.
+Example: free -h (human-readable format)
+uptime – Show how long the system has been running.
+whoami – Display the current logged-in user.
+hostname – Display or set the system hostname.
+Permissions and Ownership:
+chmod – Change file permissions.
+Example: chmod 755 file.sh
+chown – Change file owner and group.
+Example: chown user:group file.txt
+chgrp – Change group ownership.
+Example: chgrp group file.txt
+Networking:
+ifconfig – Display or configure network interfaces.
+ping – Test network connectivity.
+Example: ping google.com
+netstat – Display network connections, routing tables, and interface statistics.
+scp – Securely copy files between hosts.
+Example: scp file user@host:/path/to/destination
+ssh – Securely connect to remote hosts.
+Example: ssh user@hostname
+wget – Download files from the web.
+Example: wget http://example.com/file
+Archiving and Compression:
+tar – Archive files.
+Example: tar -czvf archive.tar.gz /path/to/folder (compress and archive)
+zip / unzip – Compress and extract zip files.
+gzip / gunzip – Compress and decompress files.
+Package Management (Ubuntu/Debian-based):
+apt-get – Install and manage packages.
+Example: sudo apt-get install package_name
+dpkg – Install, remove, and manage .deb packages.
+Example: dpkg -i package.deb
+Disk and File System Management:
+mount – Mount a file system.
+umount – Unmount a file system.
+fsck – Check and repair file system.
+parted – Manage disk partitions.
+Miscellaneous:
+alias – Create custom commands.
+Example: alias ll="ls -l"
+history – Show command history.
+man – Display the manual for a command.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
