@@ -1,0 +1,24 @@
+git add filename
+git commit -m "commiting" filename
+git push -u origin branchname
+git pull origin branchname
+git status 
+git logs
+git logs --oneline
+git branch
+git branch branchname
+git checkout branchname
+git checkout -b branchname
+git branch -d branchname
+git merge branchname
+git reset filename -- unstage a file
+git rest --hard HEAD~n -- delete 
+git reset --soft HEAD~n -- delete
+git diff
+git diff --staged
+git stash
+git stash pop
+git stash list
+git remote -v
+git remote add origin remoterepository url
+git remote remove origin 
