@@ -7,8 +7,47 @@
 #### we can also use echo statements before commands but if we have multiple commands it is tough to write echo cmmand for all the commands
 and if we use "set -x" we write only one time and it will prints the command before output.
 
-set -x # if we write commands directly we get confuse at the output like which command is for which output so this set -x will print the command and output.
+ 1.set -x   # debug mode     ----- if we write commands directly we get confuse at the output like which command is for which output so this set -x will print the command and output.
+set -e     # exits the code when there is a error
+set -o     # exits
+2.df -h
+3.free -g
+4.nproc -h
 
-df -h
-free -g
-nproc -h
+#finding out the number of process
+#ps processes  ef gives the details of every processes running in the background.
+5.ps -ef   
+
+#finding out the particular process list with process id
+#here we are having two different commands  | symbol is used to send the output of first command to second command
+# grep it only fetches the required information 
+
+7.ps -ef | grep "amazon"    # it will give full information related to amazon with pid
+EX:
+test.sh 
+echo 1
+echo 12
+echo 13
+echo 99
+echo 33
+# now we want to print the numbers starting with 1 then use
+
+8.  ./test.sh | grep 1
+####################interview question
+what is the output of   "date | echo "today is"    it will print < today is > it did not print the date.
+now the question is why it did not print the date as | symbol sends output of 1st command to 2nd command
+here the "date" command is the default command(default shell command) it will send the output to stdin (in any system there are 2 log flows 
+stdin , stdout , stderr ) if the date command sends output to stdi, | symbol will not receive output from stdin#############################
+
+now my manager is asked he want only amazon process ids nt full details of amazon
+awk          ---- it will filterout the information from your output
+
+##############diff between grep and awk is grep will give entire statements, but the awk is very powerfull it can give a specific column from your output.
+9. ps -ef | grep "amazon" | awk -F" "'{print $2}'            ##the above command prints 2nd column from multiple rows
+
+test.sh
+my name is bhargavi
+my employee id is 111
+
+10. grep name test          # this command prints "my name is bhargavi" it said that you asked for name from that file but you asked for the name and am giving 
+11. grep name test | awk -F" " '{print $4}'        #it prints bhargavi only name 
