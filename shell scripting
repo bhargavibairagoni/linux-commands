@@ -1,0 +1,12 @@
+#!/bin/bash
+########## wee need to write the author name and date
+# author: Bhargavi  
+# date: 23-03-2025
+#this script outputs the node health
+# version v1
+
+set -x # if we write commands directly we get confuse at the output like which command is for which output so this set -x will print the command and output.
+
+df -h
+free -g
+nproc -h
