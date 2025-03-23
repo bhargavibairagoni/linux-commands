@@ -4,6 +4,8 @@
 # date: 23-03-2025
 #this script outputs the node health
 # version v1
+#### we can also use echo statements before commands but if we have multiple commands it is tough to write echo cmmand for all the commands
+and if we use "set -x" we write only one time and it will prints the command before output.
 
 set -x # if we write commands directly we get confuse at the output like which command is for which output so this set -x will print the command and output.
 
